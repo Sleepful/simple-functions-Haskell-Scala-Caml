@@ -21,7 +21,20 @@ def isPerfectSquare (int:Int) =
   }
 
 
-def fib( n : Int) : Int = n match 
+def listaFibonaccisAux (int:Int, n:Int):List[Int]=
+  {
+  if (int> fib(n))
+    fib (n) :: (listaFibonaccisAux (int, (n+1)))
+  else 
+    List()
+  }
+
+def listaFibonaccis (int:Int):List[Int]=
+  {
+  listaFibonaccisAux (int, 0)
+  }
+
+def fib(n:Int) : Int = n match 
   {
    case 0 | 1 => n
    case _ => fib( n-1 ) + fib( n-2 )

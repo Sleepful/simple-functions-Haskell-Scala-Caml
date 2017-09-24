@@ -1,4 +1,4 @@
-# Scala:
+### Scala:
 
 merge
 nthcdr
@@ -9,7 +9,7 @@ ListaFibonaccis
 multiplMatricesInt
 ReverseInt
 
-# Haskell:
+### Haskell:
 
 merge
 nthcdr
@@ -17,19 +17,14 @@ nthcdr
 EsFibonacciP
 ListaFibonaccis
 
-multiplMatricesInt
 ReverseInt
 
-# Camllight:
+### Camllight:
 
 merge
 nthcdr
 
 EsFibonacciP
-ListaFibonaccis
-
-multiplMatricesInt
-ReverseInt
 
 # Explicación de las funciones:
 

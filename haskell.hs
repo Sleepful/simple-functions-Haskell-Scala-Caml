@@ -21,7 +21,7 @@ listaFibonaccis int
 
 listaFibonaccisAux int n
   | int > fibby = [fibby] ++ listaFibonaccisAux int (n+1)
-  | otherwise = [fibby] 
+  | otherwise = [] 
   where fibby = fib n
 
 fib 0 = 0

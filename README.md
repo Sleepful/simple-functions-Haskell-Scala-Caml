@@ -55,7 +55,7 @@ Se recomienda utilizar los REPL (read eval print loop) de cada lenguaje, el meto
 
 ### Haskell:
 en caso de cargarlo en un repl, el archivo se carga con `:load haskell.hs`
-
+```
 merge
 *Main> merge [1,2,3][4,5,6]
 [1,2,3,4,5,6]
@@ -86,11 +86,11 @@ reverseInt
 -1243
 *Main> reverseInt 69696969
 96969696
-
+```
 
 ### Scala:
 en caso de cargarlo en un repl, el archivo se carga con `:load scala.scala`
-
+```
 merge
 scala> merge(List(3,4,1,2,3),List('a','b','c'))
 res14: List[Any] = List(3, 4, 1, 2, 3, a, b, c)
@@ -111,19 +111,28 @@ res61: List[Int] = List(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89)
 scala> listaFibonaccis(145)
 res62: List[Int] = List(0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144)
 
-multiplMatricesInt
-
 reverseInt
 scala> reverseInt (1234)
 res50: Int = 4321
 
 scala> reverseInt (-1234)
 res51: Int = -4321
+```
 
 ### Camllight:
 en caso de cargarlo en un repl, el archivo se carga con `include “caml.ml”;;`
-
+```
 merge
 #merge [1;3;4] [12;3;4];;
 - : int list = [1; 3; 4; 12; 3; 4]
 
+nthcdr
+#nthcdr 3 [12;3;4;5;43;666];;
+- : int list = [5; 43; 666]
+
+esFibonacciP
+#esFibonacciP 145;;
+- : bool = false
+#esFibonacciP 144;;
+- : bool = true
+```
